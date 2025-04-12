@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pl" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="description" content="KS Śniadowo – oficjalna strona klubu sportowego z Podlasia. Poczuj zieloną pasję, sprawdź wyniki meczów, tabelę ligową i kup bilety!">
+    <meta name="keywords" content="KS Śniadowo, piłka nożna, Podlasie, bilety, zielona pasja, sport, IV liga podlaska">
+    <meta name="author" content="KS Śniadowo">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#6fa910">
+    <meta property="og:title" content="KS Śniadowo – Zielona Pasja">
+    <meta property="og:description" content="Dołącz do KS Śniadowo – odkryj emocje, sprawdź wyniki meczów, tabelę ligową i bądź częścią zielonej pasji!">
+    <meta property="og:image" content="images/og-image.avif">
+    <meta property="og:image:alt" content="Logo KS Śniadowo na tle stadionu">
+    <meta property="og:type" content="website">
+    <title>KS Śniadowo – Zielona Pasja</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" fetchpriority="low">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <style>
+        /* Krytyczne CSS */
+        body { margin: 0; font-family: 'Inter', sans-serif; background: #111827; color: #fefefd; }
+        .navbar { position: fixed; top: 0; width: 100%; background: rgba(17, 24, 39, 0.95); z-index: 1000; }
+        .hero { position: relative; height: 100vh; display: flex; align-items: center; justify-content: center; }
+        .hero-video { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -2; }
+        .hero-content { text-align: center; color: #fefefd; max-width: 1000px; }
+        .hero-title { font-family: 'Montserrat', sans-serif; font-size: 6rem; margin-bottom: 1.5rem; }
+        .matches-section, .league-table-section, .stats-section { padding: 4rem 0; }
+        .matches-timeline { display: grid; gap: 2rem; }
+        .match-card { background: #1f2937; border-radius: 8px; overflow: hidden; transition: transform 0.3s; }
+        .match-card:hover { transform: translateY(-5px); }
+        .league-table { overflow-x: auto; }
+        .league-table table { width: 100%; border-collapse: collapse; }
+        .league-table th, .league-table td { padding: 1rem; text-align: left; }
+        .league-table th { background: #6fa910; color: #111827; }
+        .league-table tr:nth-child(even) { background: #374151; }
+        .highlight-team { background: #6fa910 !important; color: #111827; }
+        .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; }
+        .stat-card { background: #1f2937; padding: 1.5rem; border-radius: 8px; text-align: center; }
+        .progress-bar { background: #374151; height: 8px; border-radius: 4px; overflow: hidden; }
+        .progress-fill { background: #6fa910; height: 100%; }
+        @media (max-width: 768px) {
+            .hero-title { font-size: 3.5rem; }
+            .league-table th, .league-table td { font-size: 0.9rem; padding: 0.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader" class="preloader">
+        <div class="spinner">
+            <svg viewBox="0 0 50 50">
+                <circle cx="25" cy="25" r="20" stroke="#6fa910" stroke-width="5" fill="none" />
+            </svg>
+        </div>
+        <p>Rozpalamy zieloną pasję...</p>
+    </div>
+
+    <!-- Nawigacja -->
+    <header class="navbar" role="navigation" aria-label="Główne menu">
+        <div class="container">
+            <a href="/" class="logo" aria-label="Strona główna KS Śniadowo">
+                <img src="images/logo.avif" alt="Logo KS Śniadowo" loading="eager" fetchpriority="high">
+            </a>
+            <nav class="nav-links" id="nav-links" aria-label="Menu nawigacyjne">
+                <ul>
+                    <li><a href="/" aria-current="page" data-lang-key="home">Strona główna</a></li>
+                    <li><a href="#matches" data-lang-key="matches">Mecze</a></li>
+                    <li><a href="#league-table" data-lang-key="league-table">Tabela</a></li>
+                    <li><a href="#club" data-lang-key="club">O klubie</a></li>
+                </ul>
+            </nav>
+            <div class="nav-controls">
+                <select class="lang-switcher" aria-label="Wybierz język">
+                    <option value="pl" selected>PL</option>
+                    <option value="en">EN</option>
+                </select>
+                <button class="burger" aria-label="Otwórz menu mobilne" aria-expanded="false" aria-controls="nav-links">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Główna treść -->
+    <main>
+        <!-- Hero -->
+        <section id="home" class="hero">
+            <video class="hero-video" autoplay muted loop playsinline poster="images/hero-fallback.avif" aria-hidden="true" fetchpriority="high">
+                <source src="videos/hero-bg.mp4" type="video/mp4">
+                <source src="videos/hero-bg.webm" type="video/webm">
+            </video>
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <h1 class="hero-title" data-lang-key="hero-title"><span>Zielona</span> Pasja</h1>
+                <p class="hero-subtitle" data-lang-key="hero-subtitle">KS Śniadowo – serce Podlasia bije na boisku</p>
+                <a href="#matches" class="btn btn-primary" aria-label="Sprawdź najbliższy mecz" data-lang-key="check-matches">
+                    <span>Sprawdź mecze</span>
+                    <i class="fas fa-futbol"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- Mecze -->
+        <section id="matches" class="matches-section">
+            <div class="container">
+                <h2 data-lang-key="matches-title">Nasze mecze</h2>
+                <div class="matches-filter">
+                    <button class="filter-btn active" data-filter="all">Wszystkie</button>
+                    <button class="filter-btn" data-filter="home">Domowe</button>
+                    <button class="filter-btn" data-filter="away">Wyjazdowe</button>
+                </div>
+                <div class="matches-timeline" id="matches-timeline" aria-live="polite">
+                    <!-- Mecze będą dynamicznie wstawiane przez JavaScript -->
+                    <p class="loading-message" data-lang-key="loading-matches">Ładowanie meczów...</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tabela ligowa -->
+        <section id="league-table" class="league-table-section">
+            <div class="container">
+                <h2 data-lang-key="league-table-title">Tabela IV ligi podlaskiej</h2>
+                <div class="league-table" role="grid" aria-label="Tabela ligowa IV ligi podlaskiej">
+                    <table id="league-table-content">
+                        <thead>
+                            <tr>
+                                <th scope="col">Poz.</th>
+                                <th scope="col">Drużyna</th>
+                                <th scope="col">Mecze</th>
+                                <th scope="col">Punkty</th>
+                                <th scope="col">Z</th>
+                                <th scope="col">R</th>
+                                <th scope="col">P</th>
+                                <th scope="col">Bramki</th>
+                            </tr>
+                        </thead>
+                        <tbody id="league-table-body">
+                            <!-- Tabela będzie dynamicznie wstawiana przez JavaScript -->
+                            <tr><td colspan="8" class="loading-message" data-lang-key="loading-table">Ładowanie tabeli...</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- O klubie -->
+        <section id="club" class="club-section">
+            <div class="container">
+                <h2 data-lang-key="club-title">Poczuj ducha KS Śniadowo</h2>
+                <div class="club-content">
+                    <div class="club-text">
+                        <p data-lang-key="club-text-1">KS Śniadowo to więcej niż klub – to pasja, która od 2003 roku łączy kibiców i zawodników Podlasia. Walczymy w IV Lidze z zielonym sercem.</p>
+                        <p data-lang-key="club-text-2">Dołącz do nas na stadionie i bądź częścią historii, którą tworzymy razem!</p>
+                        <a href="#club" class="btn btn-secondary" aria-label="Poznaj historię KS Śniadowo" data-lang-key="learn-more">Poznaj nas</a>
+                    </div>
+                    <div class="club-media">
+                        <video class="club-video" autoplay muted loop playsinline poster="images/team-photo-fallback.avif" aria-hidden="true" loading="lazy">
+                            <source src="videos/team-highlight.mp4" type="video/mp4">
+                            <source src="videos/team-highlight.webm" type="video/webm">
+                        </video>
+                        <picture class="club-image-fallback">
+                            <source srcset="images/team-photo.avif" type="image/avif">
+                            <source srcset="images/team-photo.webp" type="image/webp">
+                            <img src="images/team-photo.jpg" alt="Drużyna KS Śniadowo w akcji" loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+                <!-- Statystyki drużyny -->
+                <div class="stats-section">
+                    <h3 data-lang-key="team-stats-title">Statystyki KS Śniadowo</h3>
+                    <div class="stats-filter">
+                        <button class="filter-btn active" data-stats="overall">Ogólne</button>
+                        <button class="filter-btn" data-stats="home">Domowe</button>
+                        <button class="filter-btn" data-stats="away">Wyjazdowe</button>
+                    </div>
+                    <div class="stats-grid" id="team-stats-content" aria-live="polite">
+                        <!-- Statystyki będą dynamicznie wstawiane przez JavaScript -->
+                        <p class="loading-message" data-lang-key="loading-stats">Ładowanie statystyk...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Stopka -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="images/logo-footer.avif" alt="Logo KS Śniadowo" loading="lazy">
+                    <p data-lang-key="footer-slogan">Zielona pasja od 2003 roku</p>
+                </div>
+                <div class="footer-social">
+                    <h3 data-lang-key="follow-us">Śledź nas</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="Profil KS Śniadowo na Facebooku"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Profil KS Śniadowo na Instagramie"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Profil KS Śniadowo na Twitterze"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-sponsors">
+                <h3 data-lang-key="sponsors-title">Nasi sponsorzy</h3>
+                <div class="sponsors-list">
+                    <a href="#" class="sponsor" aria-label="Sponsor AgroMax">
+                        <img src="images/sponsor-agromax.avif" alt="Logo AgroMax" loading="lazy">
+                    </a>
+                    <a href="#" class="sponsor" aria-label="Sponsor BudTech">
+                        <img src="images/sponsor-budtech.avif" alt="Logo BudTech" loading="lazy">
+                    </a>
+                    <a href="#" class="sponsor" aria-label="Sponsor Podlasie Foods">
+                        <img src="images/sponsor-podlasie.avif" alt="Logo Podlasie Foods" loading="lazy">
+                    </a>
+                    <a href="#" class="sponsor" aria-label="Sponsor SportTrend">
+                        <img src="images/sponsor-sporttrend.avif" alt="Logo SportTrend" loading="lazy">
+                    </a>
+                </div>
+            </div>
+            <p class="footer-copyright" data-lang-key="copyright">© 2025 KS Śniadowo. Wszystkie prawa zastrzeżone.</p>
+        </div>
+    </footer>
+
+    <!-- Przycisk powrotu na górę -->
+    <button id="back-to-top" aria-label="Powrót na górę strony">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script defer src="script.js"></script>
+</body>
+</html>

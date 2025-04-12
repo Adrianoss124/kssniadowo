@@ -1,0 +1,24 @@
+{
+    "playoffs": {
+      "title": "Baraże o udział w III lidze, grupa: I",
+      "semifinals": {
+        "date": "2025-06-18",
+        "matches": [
+          {
+            "match_id": 1,
+            "teams": "Warmińsko-Mazurski ZPN vs Podlaski ZPN",
+            "note": "Losowanie - 3 grudnia 2024 - siedziba PZPN"
+          },
+          {
+            "match_id": 2,
+            "teams": "Mazowiecki ZPN vs Łódzki ZPN",
+            "note": "Losowanie - 3 grudnia 2024 - siedziba PZPN"
+          }
+        ]
+      },
+      "final": {
+        "date": "2025-06-21/22",
+        "match": "Zwycięzca meczu 1 vs Zwycięzca meczu 2"
+      }
+    }
+  }

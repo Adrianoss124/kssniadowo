@@ -1,0 +1,527 @@
+{
+    "league": "IV liga podlaska 2024/2025",
+    "standings": [
+        {
+            "position": 1,
+            "team": "KS Wasilków",
+            "matches": 23,
+            "points": 66,
+            "wins": 22,
+            "draws": 0,
+            "losses": 1,
+            "goals_scored": 90,
+            "goals_conceded": 16,
+            "home": {
+                "matches": 12,
+                "points": 36,
+                "wins": 12,
+                "draws": 0,
+                "losses": 0,
+                "goals_scored": 39,
+                "goals_conceded": 11
+            },
+            "away": {
+                "matches": 11,
+                "points": 30,
+                "wins": 10,
+                "draws": 0,
+                "losses": 1,
+                "goals_scored": 51,
+                "goals_conceded": 5
+            }
+        },
+        {
+            "position": 2,
+            "team": "Olimpia Zambrów",
+            "matches": 23,
+            "points": 57,
+            "wins": 19,
+            "draws": 0,
+            "losses": 4,
+            "goals_scored": 88,
+            "goals_conceded": 29,
+            "home": {
+                "matches": 12,
+                "points": 30,
+                "wins": 10,
+                "draws": 0,
+                "losses": 2,
+                "goals_scored": 50,
+                "goals_conceded": 12
+            },
+            "away": {
+                "matches": 11,
+                "points": 27,
+                "wins": 9,
+                "draws": 0,
+                "losses": 2,
+                "goals_scored": 38,
+                "goals_conceded": 17
+            }
+        },
+        {
+            "position": 3,
+            "team": "Ruch Wysokie Mazowieckie",
+            "matches": 23,
+            "points": 55,
+            "wins": 18,
+            "draws": 1,
+            "losses": 4,
+            "goals_scored": 89,
+            "goals_conceded": 28,
+            "home": {
+                "matches": 12,
+                "points": 30,
+                "wins": 10,
+                "draws": 0,
+                "losses": 2,
+                "goals_scored": 49,
+                "goals_conceded": 13
+            },
+            "away": {
+                "matches": 11,
+                "points": 25,
+                "wins": 8,
+                "draws": 1,
+                "losses": 2,
+                "goals_scored": 40,
+                "goals_conceded": 15
+            }
+        },
+        {
+            "position": 4,
+            "team": "Warmia Grajewo",
+            "matches": 23,
+            "points": 48,
+            "wins": 15,
+            "draws": 3,
+            "losses": 5,
+            "goals_scored": 72,
+            "goals_conceded": 38,
+            "home": {
+                "matches": 12,
+                "points": 30,
+                "wins": 10,
+                "draws": 0,
+                "losses": 2,
+                "goals_scored": 46,
+                "goals_conceded": 14
+            },
+            "away": {
+                "matches": 11,
+                "points": 18,
+                "wins": 5,
+                "draws": 3,
+                "losses": 3,
+                "goals_scored": 26,
+                "goals_conceded": 24
+            }
+        },
+        {
+            "position": 5,
+            "team": "Turośnianka Turośń Kościelna",
+            "matches": 23,
+            "points": 42,
+            "wins": 13,
+            "draws": 3,
+            "losses": 7,
+            "goals_scored": 61,
+            "goals_conceded": 33,
+            "home": {
+                "matches": 11,
+                "points": 23,
+                "wins": 7,
+                "draws": 2,
+                "losses": 2,
+                "goals_scored": 37,
+                "goals_conceded": 14
+            },
+            "away": {
+                "matches": 12,
+                "points": 19,
+                "wins": 6,
+                "draws": 1,
+                "losses": 5,
+                "goals_scored": 24,
+                "goals_conceded": 19
+            }
+        },
+        {
+            "position": 6,
+            "team": "MOSP Białystok",
+            "matches": 22,
+            "points": 40,
+            "wins": 12,
+            "draws": 4,
+            "losses": 6,
+            "goals_scored": 44,
+            "goals_conceded": 36,
+            "home": {
+                "matches": 11,
+                "points": 26,
+                "wins": 8,
+                "draws": 2,
+                "losses": 1,
+                "goals_scored": 30,
+                "goals_conceded": 17
+            },
+            "away": {
+                "matches": 11,
+                "points": 14,
+                "wins": 4,
+                "draws": 2,
+                "losses": 5,
+                "goals_scored": 14,
+                "goals_conceded": 19
+            }
+        },
+        {
+            "position": 7,
+            "team": "Wissa Szczuczyn",
+            "matches": 23,
+            "points": 37,
+            "wins": 10,
+            "draws": 7,
+            "losses": 6,
+            "goals_scored": 42,
+            "goals_conceded": 40,
+            "home": {
+                "matches": 11,
+                "points": 26,
+                "wins": 8,
+                "draws": 2,
+                "losses": 1,
+                "goals_scored": 29,
+                "goals_conceded": 16
+            },
+            "away": {
+                "matches": 12,
+                "points": 11,
+                "wins": 2,
+                "draws": 5,
+                "losses": 5,
+                "goals_scored": 13,
+                "goals_conceded": 24
+            }
+        },
+        {
+            "position": 8,
+            "team": "Supraślanka Supraśl",
+            "matches": 23,
+            "points": 31,
+            "wins": 10,
+            "draws": 1,
+            "losses": 12,
+            "goals_scored": 43,
+            "goals_conceded": 49,
+            "home": {
+                "matches": 12,
+                "points": 19,
+                "wins": 6,
+                "draws": 1,
+                "losses": 5,
+                "goals_scored": 26,
+                "goals_conceded": 28
+            },
+            "away": {
+                "matches": 11,
+                "points": 12,
+                "wins": 4,
+                "draws": 0,
+                "losses": 7,
+                "goals_scored": 17,
+                "goals_conceded": 21
+            }
+        },
+        {
+            "position": 9,
+            "team": "KS Śniadowo",
+            "matches": 21,
+            "points": 29,
+            "wins": 9,
+            "draws": 2,
+            "losses": 10,
+            "goals_scored": 43,
+            "goals_conceded": 42,
+            "home": {
+                "matches": 11,
+                "points": 20,
+                "wins": 6,
+                "draws": 2,
+                "losses": 3,
+                "goals_scored": 24,
+                "goals_conceded": 13
+            },
+            "away": {
+                "matches": 10,
+                "points": 9,
+                "wins": 3,
+                "draws": 0,
+                "losses": 7,
+                "goals_scored": 19,
+                "goals_conceded": 29
+            }
+        },
+        {
+            "position": 10,
+            "team": "Tur Bielsk Podlaski",
+            "matches": 22,
+            "points": 27,
+            "wins": 7,
+            "draws": 6,
+            "losses": 9,
+            "goals_scored": 43,
+            "goals_conceded": 43,
+            "home": {
+                "matches": 12,
+                "points": 15,
+                "wins": 4,
+                "draws": 3,
+                "losses": 5,
+                "goals_scored": 22,
+                "goals_conceded": 22
+            },
+            "away": {
+                "matches": 10,
+                "points": 12,
+                "wins": 3,
+                "draws": 3,
+                "losses": 4,
+                "goals_scored": 21,
+                "goals_conceded": 21
+            }
+        },
+        {
+            "position": 11,
+            "team": "Krypnianka Krypno",
+            "matches": 23,
+            "points": 27,
+            "wins": 7,
+            "draws": 6,
+            "losses": 10,
+            "goals_scored": 40,
+            "goals_conceded": 43,
+            "home": {
+                "matches": 13,
+                "points": 18,
+                "wins": 5,
+                "draws": 3,
+                "losses": 5,
+                "goals_scored": 23,
+                "goals_conceded": 22
+            },
+            "away": {
+                "matches": 10,
+                "points": 9,
+                "wins": 2,
+                "draws": 3,
+                "losses": 5,
+                "goals_scored": 17,
+                "goals_conceded": 21
+            }
+        },
+        {
+            "position": 12,
+            "team": "Promień Mońki",
+            "matches": 22,
+            "points": 26,
+            "wins": 8,
+            "draws": 2,
+            "losses": 12,
+            "goals_scored": 35,
+            "goals_conceded": 56,
+            "home": {
+                "matches": 10,
+                "points": 12,
+                "wins": 4,
+                "draws": 0,
+                "losses": 6,
+                "goals_scored": 17,
+                "goals_conceded": 26
+            },
+            "away": {
+                "matches": 12,
+                "points": 14,
+                "wins": 4,
+                "draws": 2,
+                "losses": 6,
+                "goals_scored": 18,
+                "goals_conceded": 30
+            }
+        },
+        {
+            "position": 13,
+            "team": "Orzeł Kolno",
+            "matches": 23,
+            "points": 24,
+            "wins": 6,
+            "draws": 6,
+            "losses": 11,
+            "goals_scored": 38,
+            "goals_conceded": 47,
+            "home": {
+                "matches": 12,
+                "points": 12,
+                "wins": 3,
+                "draws": 3,
+                "losses": 6,
+                "goals_scored": 16,
+                "goals_conceded": 27
+            },
+            "away": {
+                "matches": 11,
+                "points": 12,
+                "wins": 3,
+                "draws": 3,
+                "losses": 5,
+                "goals_scored": 22,
+                "goals_conceded": 20
+            }
+        },
+        {
+            "position": 14,
+            "team": "Hetman Tykocin",
+            "matches": 23,
+            "points": 22,
+            "wins": 6,
+            "draws": 4,
+            "losses": 13,
+            "goals_scored": 37,
+            "goals_conceded": 67,
+            "home": {
+                "matches": 12,
+                "points": 12,
+                "wins": 3,
+                "draws": 3,
+                "losses": 6,
+                "goals_scored": 20,
+                "goals_conceded": 34
+            },
+            "away": {
+                "matches": 11,
+                "points": 10,
+                "wins": 3,
+                "draws": 1,
+                "losses": 7,
+                "goals_scored": 17,
+                "goals_conceded": 33
+            }
+        },
+        {
+            "position": 15,
+            "team": "Orlęta Czyżew",
+            "matches": 23,
+            "points": 17,
+            "wins": 3,
+            "draws": 8,
+            "losses": 12,
+            "goals_scored": 26,
+            "goals_conceded": 60,
+            "home": {
+                "matches": 12,
+                "points": 8,
+                "wins": 1,
+                "draws": 5,
+                "losses": 6,
+                "goals_scored": 11,
+                "goals_conceded": 28
+            },
+            "away": {
+                "matches": 11,
+                "points": 9,
+                "wins": 2,
+                "draws": 3,
+                "losses": 6,
+                "goals_scored": 15,
+                "goals_conceded": 32
+            }
+        },
+        {
+            "position": 16,
+            "team": "KS Michałowo",
+            "matches": 23,
+            "points": 16,
+            "wins": 4,
+            "draws": 4,
+            "losses": 15,
+            "goals_scored": 39,
+            "goals_conceded": 72,
+            "home": {
+                "matches": 12,
+                "points": 6,
+                "wins": 1,
+                "draws": 3,
+                "losses": 8,
+                "goals_scored": 17,
+                "goals_conceded": 37
+            },
+            "away": {
+                "matches": 11,
+                "points": 10,
+                "wins": 3,
+                "draws": 1,
+                "losses": 7,
+                "goals_scored": 22,
+                "goals_conceded": 35
+            }
+        },
+        {
+            "position": 17,
+            "team": "Czarni Czarna Białostocka",
+            "matches": 21,
+            "points": 14,
+            "wins": 4,
+            "draws": 2,
+            "losses": 15,
+            "goals_scored": 24,
+            "goals_conceded": 66,
+            "home": {
+                "matches": 4,
+                "points": 3,
+                "wins": 1,
+                "draws": 0,
+                "losses": 3,
+                "goals_scored": 6,
+                "goals_conceded": 20
+            },
+            "away": {
+                "matches": 17,
+                "points": 11,
+                "wins": 3,
+                "draws": 2,
+                "losses": 12,
+                "goals_scored": 18,
+                "goals_conceded": 46
+            }
+        },
+        {
+            "position": 18,
+            "team": "Sparta 1951 Szepietowo",
+            "matches": 22,
+            "points": 1,
+            "wins": 0,
+            "draws": 1,
+            "losses": 21,
+            "goals_scored": 12,
+            "goals_conceded": 101,
+            "home": {
+                "matches": 12,
+                "points": 1,
+                "wins": 0,
+                "draws": 1,
+                "losses": 11,
+                "goals_scored": 5,
+                "goals_conceded": 45
+            },
+            "away": {
+                "matches": 10,
+                "points": 0,
+                "wins": 0,
+                "draws": 0,
+                "losses": 10,
+                "goals_scored": 7,
+                "goals_conceded": 56
+            }
+        }
+    ]
+}
